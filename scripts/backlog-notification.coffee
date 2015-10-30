@@ -1,7 +1,7 @@
 backlogUrl = 'https://app-rev.backlog.jp/'
 
 module.exports = (robot) ->
-  robot.router.post "/room/:general", (req, res) ->
+  robot.router.post "/room/:room", (req, res) ->
     room = req.params.room
     body = req.body
 
