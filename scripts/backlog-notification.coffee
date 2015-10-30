@@ -20,7 +20,7 @@ module.exports = (robot) ->
               return
 
       # 投稿メッセージを整形
-      url = "#{process.env.BACKLOG_URL}/view/#{body.project.projectKey}-#{body.content.key_id}"
+      url = "#{process.env.backlogUrl}/view/#{body.project.projectKey}-#{body.content.key_id}"
       if body.content.comment?.id?
           url += "#comment-#{body.content.comment.id}"
 
